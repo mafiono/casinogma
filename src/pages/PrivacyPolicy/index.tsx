@@ -1,16 +1,19 @@
-import React from "react";
+import Footer from 'components/Footer';
+import Header from 'components/Header'
+import React from 'react'
 
-var YourComponent = React.createClass({
-  render: function () {
-    return (
-      <main className="main-rows">
+function PrivacyPolicy() {
+  return (
+    <>
+    <Header />
+    <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
             className="uc-row     last                        backgroundCover 
                     
                                             "
             data-id={8}
-            style={{ "margin-bottom": "8.2063305978898vh" }}
+            style={{ marginBottom: "8.2063305978898vh" }}
           >
             <div id="r8" className="row-container  container ">
               <div className="row mainRow " style={{}}>
@@ -22,7 +25,7 @@ var YourComponent = React.createClass({
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "8.2063305978898vh" }}
+                    style={{ marginTop: "8.2063305978898vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -31,7 +34,7 @@ var YourComponent = React.createClass({
                              first                              "
                       style={{
                         padding: "0px 40px 0px 40px",
-                        "padding-bottom": "2.3446658851114vh",
+                        paddingBottom: "2.3446658851114vh",
                       }}
                       aria-label="module container"
                       role="contentinfo"
@@ -61,7 +64,7 @@ var YourComponent = React.createClass({
                       <div
                         className="full-width    module ModuleParagraph "
                         datamodule-id={19}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
                         <div className="uc-content">
                           <p>
@@ -203,8 +206,9 @@ var YourComponent = React.createClass({
           </div>
         </div>
       </main>
-    );
-  },
-});
+      <Footer />
+    </>
+  )
+}
 
-export default PrivacyPolicy();
+export default PrivacyPolicy;

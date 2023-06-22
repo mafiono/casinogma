@@ -1,9 +1,14 @@
-import React from "react";
-import { Link } from "react-router-dom";
-const Home = React.createClass({
-  render: function () {
-    return (
-      <main className="main-rows">
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import React from 'react'
+import "./home.less";
+import { Link } from 'react-router-dom'
+
+const Home = () => {
+  return (
+    <>
+    <Header />
+     <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
             className="uc-row                          
@@ -22,7 +27,7 @@ const Home = React.createClass({
                 >
                   <div
                     className="column-container vertical-bottom"
-                    style={{ "margin-bottom": "2.3446658851114vh" }}
+                    style={{ marginBottom: "2.3446658851114vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -37,7 +42,7 @@ const Home = React.createClass({
                       <div
                         className="full-width    module ModuleImage "
                         datamodule-id={525}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
                         <div
                           className="animated animated-525 "
@@ -48,7 +53,7 @@ const Home = React.createClass({
                             <div>
                               <div
                                 className="fixed-ratio"
-                                style={{ "padding-bottom": "168.21515892421%" }}
+                                style={{ paddingBottom: "168.21515892421%" }}
                               >
                                 <img
                                   className="image fixed-ratio-content "
@@ -90,18 +95,13 @@ const Home = React.createClass({
                       <div
                         className="full-width   row-on-module-effect    module ModuleImage "
                         datamodule-id={526}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-526 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-526 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-526 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-526 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-526 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-526 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-526 .effect-block.effect-steve .title,.animated-526 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-526 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                      
+                        <Link
+                        to={"/casino/"}
                           className="image-module-link"
                           target="_self"
-                          href="https://betboard.springbuilder.live/casino"
                           data-link={21}
                           data-linktype={1}
                           tabIndex={0}
@@ -117,7 +117,7 @@ const Home = React.createClass({
                                 <div
                                   className="fixed-ratio"
                                   style={{
-                                    "padding-bottom": "169.6261682243%",
+                                    paddingBottom: "169.6261682243%",
                                   }}
                                 >
                                   <img
@@ -140,7 +140,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                         <div className="uc-row-wrapper">
                           <div
                             className="uc-row   row-on-module uc-row-public  high-z-index                       
@@ -163,7 +163,7 @@ const Home = React.createClass({
                                   <div
                                     className="column-container vertical-bottom"
                                     style={{
-                                      "margin-bottom": "3.5169988276671vh",
+                                      marginBottom: "3.5169988276671vh",
                                     }}
                                     aria-label="column container"
                                     role="contentinfo"
@@ -173,7 +173,7 @@ const Home = React.createClass({
                              first                              "
                                       style={{
                                         padding: "0px 0px 0px 30px",
-                                        "padding-bottom": "0vh",
+                                        paddingBottom: "0vh",
                                       }}
                                       aria-label="module container"
                                       role="contentinfo"
@@ -211,7 +211,7 @@ const Home = React.createClass({
                                       >
                                         <div className="uc-content">
                                           <h4>
-                                            <a href="https://betboard.springbuilder.live/casino">
+                                            <Link to={"/casino/"}>
                                               <strong>
                                                 <span
                                                   style={{ color: "#ffffff" }}
@@ -219,7 +219,7 @@ const Home = React.createClass({
                                                   Casino
                                                 </span>
                                               </strong>
-                                            </a>
+                                            </Link>
                                           </h4>
                                         </div>{" "}
                                       </div>
@@ -257,18 +257,13 @@ const Home = React.createClass({
                       <div
                         className="full-width   row-on-module-effect    module ModuleImage "
                         datamodule-id={527}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-527 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-527 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-527 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-527 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-527 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-527 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-527 .effect-block.effect-steve .title,.animated-527 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-527 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                      
+                        <Link
+                        to={"/prematch/"}
                           className="image-module-link"
                           target="_self"
-                          href="https://betboard.springbuilder.live/prematch"
                           data-link={19}
                           data-linktype={1}
                           tabIndex={0}
@@ -284,7 +279,7 @@ const Home = React.createClass({
                                 <div
                                   className="fixed-ratio"
                                   style={{
-                                    "padding-bottom": "169.6261682243%",
+                                    paddingBottom: "169.6261682243%",
                                   }}
                                 >
                                   <img
@@ -307,7 +302,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                         <div className="uc-row-wrapper">
                           <div
                             className="uc-row   row-on-module uc-row-public  high-z-index                       
@@ -330,7 +325,7 @@ const Home = React.createClass({
                                   <div
                                     className="column-container vertical-bottom"
                                     style={{
-                                      "margin-bottom": "3.5169988276671vh",
+                                      marginBottom: "3.5169988276671vh",
                                     }}
                                     aria-label="column container"
                                     role="contentinfo"
@@ -340,7 +335,7 @@ const Home = React.createClass({
                              first                              "
                                       style={{
                                         padding: "0px 0px 0px 30px",
-                                        "padding-bottom": "0vh",
+                                        paddingBottom: "0vh",
                                       }}
                                       aria-label="module container"
                                       role="contentinfo"
@@ -378,7 +373,7 @@ const Home = React.createClass({
                                       >
                                         <div className="uc-content">
                                           <h4>
-                                            <a href="https://betboard.springbuilder.live/prematch">
+                                            <Link to={"/prematch"}>
                                               <strong>
                                                 <span
                                                   style={{ color: "#ffffff" }}
@@ -386,7 +381,7 @@ const Home = React.createClass({
                                                   Sports
                                                 </span>
                                               </strong>
-                                            </a>
+                                            </Link>
                                           </h4>
                                         </div>{" "}
                                       </div>
@@ -424,18 +419,13 @@ const Home = React.createClass({
                       <div
                         className="full-width   row-on-module-effect    module ModuleImage "
                         datamodule-id={528}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-528 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.5) !important;}.animated-528 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-528 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-528 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-528 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-528 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-528 .effect-block.effect-steve .title,.animated-528 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-528 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                        
+                        <Link
+                        to={"/virtualsports/"}
                           className="image-module-link"
                           target="_self"
-                          href="https://betboard.springbuilder.live/virtual-sports"
                           data-link={34}
                           data-linktype={1}
                           tabIndex={0}
@@ -451,7 +441,7 @@ const Home = React.createClass({
                                 <div
                                   className="fixed-ratio"
                                   style={{
-                                    "padding-bottom": "169.6261682243%",
+                                    paddingBottom: "169.6261682243%",
                                   }}
                                 >
                                   <img
@@ -474,7 +464,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                         <div className="uc-row-wrapper">
                           <div
                             className="uc-row   row-on-module uc-row-public  high-z-index                       
@@ -497,7 +487,7 @@ const Home = React.createClass({
                                   <div
                                     className="column-container vertical-bottom"
                                     style={{
-                                      "margin-bottom": "3.5169988276671vh",
+                                      marginBottom: "3.5169988276671vh",
                                     }}
                                     aria-label="column container"
                                     role="contentinfo"
@@ -507,7 +497,7 @@ const Home = React.createClass({
                              first                              "
                                       style={{
                                         padding: "0px 0px 0px 30px",
-                                        "padding-bottom": "0vh",
+                                        paddingBottom: "0vh",
                                       }}
                                       aria-label="module container"
                                       role="contentinfo"
@@ -545,13 +535,13 @@ const Home = React.createClass({
                                       >
                                         <div className="uc-content">
                                           <h4>
-                                            <a href="https://betboard.springbuilder.live/virtual-sports">
+                                            <Link to={"/virtualsports/"} >
                                               <span
                                                 style={{ color: "#ffffff" }}
                                               >
                                                 <strong>Virtual Sports</strong>
                                               </span>
-                                            </a>
+                                            </Link>
                                           </h4>
                                         </div>{" "}
                                       </div>
@@ -571,7 +561,7 @@ const Home = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "50% 50%" }}
+                style={{ opacity: "1", objectPosition: "50% 50%" }}
                 loading="lazy"
                 src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r266-back1.jpg?v=1646653250"
                 alt="r266-back1.jpg"
@@ -597,7 +587,7 @@ const Home = React.createClass({
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "18.757327080891vh" }}
+                    style={{ marginTop: "18.757327080891vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -606,7 +596,7 @@ const Home = React.createClass({
                              first                              "
                       style={{
                         padding: "0px 10px 0px 10px",
-                        "padding-bottom": "2.3446658851114vh",
+                        paddingBottom: "2.3446658851114vh",
                       }}
                       aria-label="module container"
                       role="contentinfo"
@@ -615,15 +605,15 @@ const Home = React.createClass({
                       <div
                         className="   module ModuleTitle "
                         datamodule-id={519}
-                        style={{ display: "block", "max-width": "1180px" }}
+                        style={{ display: "block", maxWidth: "1180px" }}
                       >
                         <div className="uc-content">
                           <h2>
                             <span
-                              style={{ "font-size": "96px", color: "#ffffff" }}
+                              style={{ fontSize: "96px", color: "#ffffff" }}
                             >
                               <strong>
-                                <span style={{ "font-family": "Montserrat" }}>
+                                <span style={{ fontFamily: "Montserrat" }}>
                                   LIVE EVENTS
                                 </span>
                               </strong>
@@ -655,7 +645,7 @@ const Home = React.createClass({
                                 <span
                                   className="v3-icon events-wrapper__header--title--icon"
                                   style={{
-                                    "font-size": "8px",
+                                    fontSize: "8px",
                                     position: "relative",
                                   }}
                                 >
@@ -682,10 +672,7 @@ const Home = React.createClass({
                                 <div
                                   className="carousel__wrapper"
                                   style={{
-                                    "-webkit-transition-duration": "0.25s",
-                                    "transition-duration": "0.25s",
-                                    "-webkit-transform": "translate(0px)",
-                                    "-ms-transform": "translate(0px)",
+                                    transitionDuration: "0.25s",
                                     transform: "translate(0px)",
                                   }}
                                 >
@@ -693,7 +680,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -788,7 +775,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -817,7 +804,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -894,7 +881,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        font: '24px',
                                         position: "relative",
                                       }}
                                     >
@@ -947,7 +934,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -1007,7 +994,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -1068,7 +1055,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -1181,7 +1168,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -1234,7 +1221,7 @@ const Home = React.createClass({
                                     <span
                                       className="v3-icon "
                                       style={{
-                                        "font-size": "24px",
+                                        fontSize: "24px",
                                         position: "relative",
                                       }}
                                     >
@@ -1267,7 +1254,7 @@ const Home = React.createClass({
                               </div>
                             </div>
                             <div className="events-wrapper__games">
-                              <a href="/live/match/Basketball/North America/755/22448318">
+                              <Link to={"/Basketball?North America/755/22448318/"}>
                                 <div className="events-game">
                                   <div className="events-game__header">
                                     <div className="events-game__header--league">
@@ -1289,7 +1276,7 @@ const Home = React.createClass({
                                           className="v3-icon match-statistic"
                                           data-popover-trigger="popover-trigger-812"
                                           style={{
-                                            "font-size": "12px",
+                                            fontSize: "12px",
                                             position: "relative",
                                           }}
                                         >
@@ -1315,20 +1302,15 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
-                                              "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            flex: "space-between",
+                                            justifyContent: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
-                                                "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              textOverflow: "ellipsis",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1340,7 +1322,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-up odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1364,20 +1346,16 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
-                                              "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            flex: "space-between",
+                                            justifyContent: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1389,7 +1367,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-up odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1413,20 +1391,17 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
+                                            justifyContent:
                                               "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            flex: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                             textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1438,7 +1413,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-down odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1459,8 +1434,8 @@ const Home = React.createClass({
                                     </div>
                                   </div>
                                 </div>
-                              </a>
-                              <a href="/live/match/Basketball/North America/755/22448319">
+                              </Link>
+                              <Link to={"/Basketball?North America/755/22448319/"}>
                                 <div className="events-game">
                                   <div className="events-game__header">
                                     <div className="events-game__header--league">
@@ -1482,7 +1457,7 @@ const Home = React.createClass({
                                           className="v3-icon match-statistic"
                                           data-popover-trigger="popover-trigger-310"
                                           style={{
-                                            "font-size": "12px",
+                                            fontSize: "12px",
                                             position: "relative",
                                           }}
                                         >
@@ -1508,20 +1483,17 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
+                                           justifyContent:
                                               "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            flex: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1533,7 +1505,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-down odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1557,20 +1529,18 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
+                                            WebkitMaskBoxImageRepeat: "space-between",
+                                            justifyContent:
                                               "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            flex: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1582,7 +1552,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-down odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1606,20 +1576,18 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
+                                            WebkitJustifyContent:
                                               "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            msFlex: "space-between",
+                                            justifyContent: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1631,7 +1599,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-up odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1652,8 +1620,8 @@ const Home = React.createClass({
                                     </div>
                                   </div>
                                 </div>
-                              </a>
-                              <a href="/live/match/Basketball/Mexico/11447/22447393">
+                              </Link>
+                              <Link to={"/Basketball?Mexico/11447/22447393"}>
                                 <div className="events-game">
                                   <div className="events-game__header">
                                     <div className="events-game__header--league">
@@ -1675,7 +1643,7 @@ const Home = React.createClass({
                                           className="v3-icon match-statistic"
                                           data-popover-trigger="popover-trigger-920"
                                           style={{
-                                            "font-size": "12px",
+                                            fontSize: "12px",
                                             position: "relative",
                                           }}
                                         >
@@ -1701,20 +1669,19 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
+                                            WebkitJustifyContent:
                                               "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            msFlex: "space-between",
+                                            justifyContent: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              msTextOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              textOverflow: "ellipsis",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1726,7 +1693,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-up odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1750,20 +1717,18 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
+                                            WebkitMaskBoxImage: "space-between",
+                                            justifyContent:
                                               "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            msFlex: "space-between",
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1775,7 +1740,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-down odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1799,20 +1764,17 @@ const Home = React.createClass({
                                         <div
                                           style={{
                                             display: "flex",
-                                            "-webkit-box-pack": "space-between",
-                                            "-webkit-justify-content":
-                                              "space-between",
-                                            "-ms-flex-pack": "space-between",
-                                            "justify-content": "space-between",
+                                            justifyContent:
+                                              'space-between',
                                           }}
                                         >
                                           <span
                                             style={{
                                               width: "auto",
-                                              "-webkit-text-overflow":
+                                              textOverflow:
                                                 "ellipsis",
-                                              "text-overflow": "ellipsis",
-                                              "white-space": "nowrap",
+                                              // "text-overflow": "ellipsis",
+                                              whiteSpace: "nowrap",
                                               overflow: "hidden",
                                             }}
                                           >
@@ -1824,7 +1786,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon odd__indicator odd__indicator-down odd__indicator-isEvent"
                                                 style={{
-                                                  "font-size": "5.2px",
+                                                  fontSize: "5.2px",
                                                   position: "absolute",
                                                 }}
                                               >
@@ -1845,7 +1807,7 @@ const Home = React.createClass({
                                     </div>
                                   </div>
                                 </div>
-                              </a>
+                              </Link>
                             </div>
                           </div>
                         </div>
@@ -1858,7 +1820,7 @@ const Home = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "50% 50%" }}
+                style={{ opacity: "1", objectPosition: "50% 50%" }}
                 loading="lazy"
                 src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r247-back2.jpg?v=1646656125"
                 alt="r247-back2.jpg"
@@ -1883,7 +1845,7 @@ const Home = React.createClass({
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "18.757327080891vh" }}
+                    style={{ marginTop: "18.757327080891vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -1892,7 +1854,7 @@ const Home = React.createClass({
                              first                              "
                       style={{
                         padding: "0px 10px 0px 80px",
-                        "padding-bottom": "2.3446658851114vh",
+                        paddingBottom: "2.3446658851114vh",
                       }}
                       aria-label="module container"
                       role="contentinfo"
@@ -1901,15 +1863,15 @@ const Home = React.createClass({
                       <div
                         className="   module ModuleTitle "
                         datamodule-id={529}
-                        style={{ display: "block", "max-width": "1180px" }}
+                        style={{ display: "block", maxWidth: "1180px" }}
                       >
                         <div className="uc-content">
                           <h2>
                             <span
-                              style={{ "font-size": "96px", color: "#ffffff" }}
+                              style={{ fontSize: "96px", color: "#ffffff" }}
                             >
                               <strong>
-                                <span style={{ "font-family": "Montserrat" }}>
+                                <span style={{ fontFamily: "Montserrat" }}>
                                   LIVE SPORT
                                 </span>
                               </strong>
@@ -1935,18 +1897,8 @@ const Home = React.createClass({
                             style={{ height: "10px" }}
                           />
                         </div>
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              '\n    .ModuleSpace[datamodule-id="542"] .space-container {\n                    border-radius: 0 0 0 0;\n                            }\n\n    .ModuleSpace[datamodule-id="542"]:hover .space-container{\n                    border-radius: 0 0 0 0;\n                        }\n',
-                          }}
-                        />
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              '\n        .ModuleSpace[datamodule-id="542"] .uc-row .column:first-child {\n            border-bottom-left-radius: 0;\n            border-top-left-radius: 0;\n        }\n\n        .ModuleSpace[datamodule-id="542"] .uc-row .column:last-child {\n            border-bottom-right-radius: 0;\n            border-top-right-radius: 0;\n        }\n    ',
-                          }}
-                        />
+                       
+                       
                       </div>
                     </div>
                   </div>
@@ -1956,7 +1908,7 @@ const Home = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "50% 0%" }}
+                style={{ opacity: "1", objectPosition: "50% 0%" }}
                 loading="lazy"
                 src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r267-backlive.jpg?v=1646658679"
                 alt="r267-backlive.jpg"
@@ -1996,16 +1948,11 @@ const Home = React.createClass({
                         className="   module ModuleImage "
                         datamodule-id={537}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-537 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-537 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-537 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-537 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-537 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-537 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-537 .effect-block.effect-steve .title,.animated-537 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-537 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                      
+                        <Link
+                        to={"/baseball/"}
                           className="image-module-link"
                           target="_self"
-                          href="/live/match/Baseball/"
                           data-link="/live/match/Baseball/"
                           data-linktype={2}
                           tabIndex={0}
@@ -2018,7 +1965,7 @@ const Home = React.createClass({
                             <div className=" effect-block public-mode figure effect-lilly  ">
                               <div>
                                 <div className="layer" />
-                                <div className style={{}}>
+                                <div className="" style={{}}>
                                   <img
                                     className="image"
                                     width="480px"
@@ -2041,9 +1988,8 @@ const Home = React.createClass({
                                       data-font-size="h4"
                                       className="title"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "Roboto",
+                                        textAlign: "left",
+                                        fontFamily: "Roboto",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2056,9 +2002,8 @@ const Home = React.createClass({
                                       data-font-size="p"
                                       role="heading"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "'Roboto'",
+                                        textAlign: "left",
+                                        fontFamily: "'Roboto'",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2070,7 +2015,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -2098,16 +2043,11 @@ const Home = React.createClass({
                         className="   module ModuleImage "
                         datamodule-id={531}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-531 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-531 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-531 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-531 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-531 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-531 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-531 .effect-block.effect-steve .title,.animated-531 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-531 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                      
+                        <Link
+                        to={"/icehockey/"}
                           className="image-module-link"
                           target="_self"
-                          href="/live/match/IceHockey"
                           data-link="/live/match/IceHockey"
                           data-linktype={2}
                           tabIndex={0}
@@ -2120,7 +2060,7 @@ const Home = React.createClass({
                             <div className=" effect-block public-mode figure effect-lilly  ">
                               <div>
                                 <div className="layer" />
-                                <div className style={{}}>
+                                <div className="" style={{}}>
                                   <img
                                     className="image"
                                     width="481px"
@@ -2143,9 +2083,8 @@ const Home = React.createClass({
                                       data-font-size="h4"
                                       className="title"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "Roboto",
+                                        textAlign: "left",
+                                        fontFamily: "Roboto",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2158,9 +2097,8 @@ const Home = React.createClass({
                                       data-font-size="p"
                                       role="heading"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "'Roboto'",
+                                        textAlign: "left",
+                                        fontFamily: "'Roboto'",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2172,7 +2110,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -2200,16 +2138,11 @@ const Home = React.createClass({
                         className="   module ModuleImage "
                         datamodule-id={535}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-535 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.52) !important;}.animated-535 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-535 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-535 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-535 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-535 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-535 .effect-block.effect-steve .title,.animated-535 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-535 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                      
+                        <Link
+                        to={"/basketball/"}
                           className="image-module-link"
                           target="_self"
-                          href="/live/match/Basketball/"
                           data-link="/live/match/Basketball/"
                           data-linktype={2}
                           tabIndex={0}
@@ -2222,7 +2155,7 @@ const Home = React.createClass({
                             <div className=" effect-block public-mode figure effect-lilly  ">
                               <div>
                                 <div className="layer" />
-                                <div className style={{}}>
+                                <div className="" style={{}}>
                                   <img
                                     className="image"
                                     width="481px"
@@ -2245,9 +2178,8 @@ const Home = React.createClass({
                                       data-font-size="h4"
                                       className="title"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "Roboto",
+                                        textAlign: "left",
+                                        fontFamily: "Roboto",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2260,9 +2192,8 @@ const Home = React.createClass({
                                       data-font-size="p"
                                       role="heading"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "'Roboto'",
+                                        textAlign: "left",
+                                        fontFamily: "'Roboto'",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2274,7 +2205,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -2302,16 +2233,12 @@ const Home = React.createClass({
                         className="   module ModuleImage "
                         datamodule-id={536}
                       >
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              "\n        .animated-536 .effect-block.effect-lilly .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-default .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-sadie .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-honey .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-roxy .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-sarah .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-Soft-Fade .layer{ background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-apollo .layer{background: rgba(0, 0, 0, 0.6) !important;}.animated-536 .effect-block.effect-honey .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-536 .effect-block.effect-roxy .figcaption:before{border-image: rgb(52, 52, 52) 3 stretch;-moz-border-image: -moz-rgb(52, 52, 52) 3 stretch;border-width: 3px;border:3px solid rgb(52, 52, 52);}.animated-536 .effect-block.effect-apollo .figcaption:before{background: rgb(52, 52, 52) !important;}.animated-536 .effect-block.effect-apollo .description:before{background: rgb(52, 52, 52) !important ;}.animated-536 .effect-block.effect-sarah .title:after{background: rgb(52, 52, 52) !important;}.animated-536 .effect-block.effect-steve .title,.animated-536 .effect-block.effect-steve .description{background: rgb(52, 52, 52) !important;}.animated-536 .effect-block.effect-goliath {background: rgb(52, 52, 52) !important;}\n\n    ",
-                          }}
-                        />
-                        <a
+                      
+                        <Link
+                        to={"/live?match/Tennis"}
                           className="image-module-link"
                           target="_self"
-                          href="/live/match/Tennis"
+                          // href="/live/match/Tennis"
                           data-link="/live/match/Tennis"
                           data-linktype={2}
                           tabIndex={0}
@@ -2324,7 +2251,7 @@ const Home = React.createClass({
                             <div className=" effect-block public-mode figure effect-lilly  ">
                               <div>
                                 <div className="layer" />
-                                <div className style={{}}>
+                                <div className="" style={{}}>
                                   <img
                                     className="image"
                                     width="480px"
@@ -2347,9 +2274,8 @@ const Home = React.createClass({
                                       data-font-size="h4"
                                       className="title"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "Roboto",
+                                        textAlign: "left",
+                                        fontFamily: "Roboto",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2362,9 +2288,8 @@ const Home = React.createClass({
                                       data-font-size="p"
                                       role="heading"
                                       style={{
-                                        "-webkit-text-align": "left",
-                                        "text-align": "left",
-                                        "font-family": "'Roboto'",
+                                        textAlign: "left",
+                                        fontFamily: "'Roboto'",
                                         color: "rgb(255, 255, 255)",
                                       }}
                                     >
@@ -2376,7 +2301,7 @@ const Home = React.createClass({
                             </div>
                           </div>
                           <span className="outline" />
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -2386,7 +2311,7 @@ const Home = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "50.813% 0%" }}
+                style={{ opacity: "1", objectPosition: "50.813% 0%" }}
                 loading="lazy"
                 src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r268-backlive.jpg?v=1646658698"
                 alt="r268-backlive.jpg"
@@ -2411,7 +2336,7 @@ const Home = React.createClass({
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "18.757327080891vh" }}
+                    style={{ marginTop: "18.757327080891vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -2420,7 +2345,7 @@ const Home = React.createClass({
                              first                              "
                       style={{
                         padding: "0px 10px 0px 10px",
-                        "padding-bottom": "2.3446658851114vh",
+                        paddingBottom: "2.3446658851114vh",
                       }}
                       aria-label="module container"
                       role="contentinfo"
@@ -2429,15 +2354,15 @@ const Home = React.createClass({
                       <div
                         className="   module ModuleTitle "
                         datamodule-id={543}
-                        style={{ display: "block", "max-width": "1180px" }}
+                        style={{ display: "block", maxWidth: "1180px" }}
                       >
                         <div className="uc-content">
                           <h2>
                             <span
-                              style={{ "font-size": "96px", color: "#ffffff" }}
+                              style={{ fontSize: "96px", color: "#ffffff" }}
                             >
                               <strong>
-                                <span style={{ "font-family": "Montserrat" }}>
+                                <span style={{ fontFamily: "Montserrat" }}>
                                   POPULAR GAMES
                                 </span>
                               </strong>
@@ -2451,7 +2376,7 @@ const Home = React.createClass({
                                                          "
                       style={{
                         padding: "0px 0px 0px 0px",
-                        "padding-bottom": "0vh",
+                        paddingBottom: "0vh",
                       }}
                       aria-label="module container"
                       role="contentinfo"
@@ -2475,7 +2400,7 @@ const Home = React.createClass({
                                 <div className="x-casinoGamesByCategories casino-container__70">
                                   <div
                                     className="x-casinoGamesByCategories__games"
-                                    style={{ "--games-per-row": "6" }}
+                                    style={{ gridAutoRows: "6" }}
                                   >
                                     <div
                                       className="x-casinoGameCardDesktop"
@@ -2494,7 +2419,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2512,7 +2437,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2530,13 +2455,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Wukong
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -2544,7 +2469,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -2554,7 +2479,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2589,7 +2514,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2607,7 +2532,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2625,13 +2550,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Jumbo Diamond
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Pascal Gaming
                                             </span>
@@ -2639,7 +2564,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -2649,7 +2574,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2689,7 +2614,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2707,7 +2632,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2725,13 +2650,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Immortal Ways Diamonds
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -2739,7 +2664,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -2749,7 +2674,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2784,7 +2709,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2802,7 +2727,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2820,13 +2745,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Fruit Story: Hold the Spin
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Gamzix
                                             </span>
@@ -2834,7 +2759,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -2844,7 +2769,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2879,7 +2804,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2897,7 +2822,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2915,13 +2840,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Texas' Heist
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Champion
                                             </span>
@@ -2929,7 +2854,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -2939,7 +2864,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2974,7 +2899,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -2992,7 +2917,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3010,13 +2935,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Art of Gold
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -3024,7 +2949,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3034,7 +2959,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3069,7 +2994,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3087,7 +3012,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3105,13 +3030,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mighty Masks™
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -3119,7 +3044,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3129,7 +3054,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3164,7 +3089,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3182,7 +3107,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3200,13 +3125,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               God Hand Feature Buy
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -3214,7 +3139,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3224,7 +3149,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3259,7 +3184,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3277,7 +3202,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3295,13 +3220,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Sea Treasure Deep Dive
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -3309,7 +3234,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3319,7 +3244,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3354,7 +3279,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3372,7 +3297,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3390,13 +3315,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Bombay Blackjack
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -3404,7 +3329,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3414,7 +3339,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3449,7 +3374,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3467,7 +3392,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3485,13 +3410,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Plinko
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -3499,7 +3424,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3509,7 +3434,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3544,7 +3469,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3562,7 +3487,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3580,13 +3505,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Temple of Torment™
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -3594,7 +3519,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3604,7 +3529,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3639,7 +3564,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3657,7 +3582,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3675,13 +3600,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Otterly Amazing
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -3689,7 +3614,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3699,7 +3624,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3734,7 +3659,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3752,7 +3677,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3770,13 +3695,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               5 Doggy Dollars
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -3784,7 +3709,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3794,7 +3719,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3829,7 +3754,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3847,7 +3772,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3865,13 +3790,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Cash Defense
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -3879,7 +3804,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3889,7 +3814,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3924,7 +3849,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3942,7 +3867,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3960,13 +3885,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Sword of Shoguns
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               THUNDERKICK
                                             </span>
@@ -3974,7 +3899,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3984,7 +3909,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4019,7 +3944,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4037,7 +3962,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4055,13 +3980,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Dragon's Element Deluxe
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Platipus
                                             </span>
@@ -4069,7 +3994,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4079,7 +4004,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4114,7 +4039,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  font: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4132,7 +4057,7 @@ const Home = React.createClass({
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4150,13 +4075,13 @@ const Home = React.createClass({
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ font: "16px" }}
                                             >
                                               True Wild
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -4164,7 +4089,7 @@ const Home = React.createClass({
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4174,7 +4099,7 @@ const Home = React.createClass({
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4217,18 +4142,8 @@ const Home = React.createClass({
                             style={{ height: "160px" }}
                           />
                         </div>
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              '\n    .ModuleSpace[datamodule-id="556"] .space-container {\n                    border-radius: 0 0 0 0;\n                            }\n\n    .ModuleSpace[datamodule-id="556"]:hover .space-container{\n                    border-radius: 0 0 0 0;\n                        }\n',
-                          }}
-                        />
-                        <style
-                          dangerouslySetInnerHTML={{
-                            __html:
-                              '\n        .ModuleSpace[datamodule-id="556"] .uc-row .column:first-child {\n            border-bottom-left-radius: 0;\n            border-top-left-radius: 0;\n        }\n\n        .ModuleSpace[datamodule-id="556"] .uc-row .column:last-child {\n            border-bottom-right-radius: 0;\n            border-top-right-radius: 0;\n        }\n    ',
-                          }}
-                        />
+                        
+                
                       </div>
                     </div>
                   </div>
@@ -4238,9 +4153,9 @@ const Home = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "49.187% 0%" }}
+                style={{ opacity: "1", objectPosition: "49.187% 0%" }}
                 loading="lazy"
-                src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r274-backcasino.jpg?v=1646660761"
+                src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r274-backcasino.jpg"
                 alt="r274-backcasino.jpg"
               />
             </div>
@@ -4254,7 +4169,7 @@ const Home = React.createClass({
                                             "
             data-id={279}
             data-effect="staticParallax"
-            style={{ "margin-bottom": "0vh" }}
+            style={{ marginBottom: "0vh" }}
           >
             <div id="r279" className="row-container  container ">
               <div className="row mainRow " style={{}}>
@@ -4266,7 +4181,7 @@ const Home = React.createClass({
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "0vh" }}
+                    style={{ marginTop: "0vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -4281,13 +4196,13 @@ const Home = React.createClass({
                       <div
                         className="   module ModuleSlider "
                         datamodule-id={555}
-                        style={{ display: "block", "max-width": "960px" }}
+                        style={{ display: "block", maxWidth: "960px" }}
                       >
                         <div
                           id="slider555"
                           className="slider-wrapper  animated animated-555 "
                           data-animated-id={555}
-                          style={{ "padding-top": "72.9412%" }}
+                          style={{ paddingTop: "72.9412%" }}
                         >
                           <div className="slider-container  effect-block public-mode figure effect-default ">
                             <ul className="slider-container ">
@@ -4295,23 +4210,21 @@ const Home = React.createClass({
                                 className="gallery-image slider-item"
                                 style={{
                                   opacity: "1",
-                                  "-webkit-transform":
-                                    "translate(0px, 0px) translateX(-100%)",
-                                  "-ms-transform":
+                                  msTransform:
                                     "translate(0px, 0px) translateX(-100%)",
                                   transform:
                                     "translate(0px, 0px) translateX(-100%)",
                                 }}
                               >
-                                <a href="/articles/bonus-wheel-1000000">
+                                <Link to={"/bonuswheel1000000/"}>
                                   <img
                                     className="cover-image image"
-                                    style={{ "object-position": "50% 50%" }}
+                                    style={{ objectPosition: '50% 50%' }}
                                     src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/555-promospor.png?v=1646664619"
                                     loading="lazy"
                                     alt="555-promospor.png"
                                   />
-                                </a>
+                                </Link>
                                 <div
                                   className="figcaption not-clickable"
                                   data-target={0}
@@ -4322,23 +4235,21 @@ const Home = React.createClass({
                                 className="gallery-image slider-item"
                                 style={{
                                   opacity: "1",
-                                  "-webkit-transform":
-                                    "translate(0px, 0px) translateX(-100%)",
-                                  "-ms-transform":
+                                  msTransform:
                                     "translate(0px, 0px) translateX(-100%)",
                                   transform:
                                     "translate(0px, 0px) translateX(-100%)",
                                 }}
                               >
-                                <a href="/articles/welcome-bonus-up-to-300">
+                                <Link to={"/welcomebonusupto300/"}>
                                   <img
                                     className="cover-image image"
-                                    style={{ "object-position": "50% 50%" }}
+                                    style={{ objectPosition: "50% 50%" }}
                                     src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/555-promocasino.png?v=1646664619"
                                     loading="lazy"
                                     alt="555-promocasino.png"
                                   />
-                                </a>
+                                </Link>
                                 <div
                                   className="figcaption not-clickable"
                                   data-target={0}
@@ -4349,23 +4260,19 @@ const Home = React.createClass({
                                 className="gallery-image slider-item active-slide"
                                 style={{
                                   opacity: "1",
-                                  "-webkit-transform":
-                                    "translate(0px, 0px) translateX(0%)",
-                                  "-ms-transform":
-                                    "translate(0px, 0px) translateX(0%)",
                                   transform:
-                                    "translate(0px, 0px) translateX(0%)",
+                                    'translate(0px, 0px) translateX(0%)',
                                 }}
                               >
-                                <a href="/articles/jackpot-5000000">
+                                <Link to={"/jackpot5000000/"}>
                                   <img
                                     className="cover-image image"
-                                    style={{ "object-position": "50% 50%" }}
+                                    style={{ objectPosition: '50% 50%' }}
                                     src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/555-promojack.png?v=1646664619"
                                     loading="lazy"
                                     alt="555-promojack.png"
                                   />
-                                </a>
+                                </Link>
                                 <div
                                   className="figcaption not-clickable"
                                   data-target={0}
@@ -4384,7 +4291,7 @@ const Home = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "49.593% 100%" }}
+                style={{ opacity: "1", objectPosition: '49.593% 100%' }}
                 loading="lazy"
                 src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r279-promoback.jpg?v=1646664584"
                 alt="r279-promoback.jpg"
@@ -4393,7 +4300,9 @@ const Home = React.createClass({
           </div>
         </div>
       </main>
-    );
-  },
-});
-export default Home;
+      <Footer />
+    </>
+  )
+}
+
+export default Home

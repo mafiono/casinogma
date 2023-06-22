@@ -1,0 +1,32 @@
+@keyframes vp-minimizing {
+  from {
+    bottom: calc(100% - 0px);
+  }
+  to {
+    bottom: 60px;
+  }
+}
+@keyframes vp-normalizing {
+  from {
+    top: calc(100% + -148px);
+  }
+  to {
+    top: 0;
+  }
+}
+@-webkit-keyframes vp-minimizing {
+  from {
+    bottom: calc(100% - 0px);
+  }
+  to {
+    bottom: 60px;
+  }
+}
+@-webkit-keyframes vp-normalizing {
+  from {
+    top: calc(100% + -148px);
+  }
+  to {
+    top: 0;
+  }
+}

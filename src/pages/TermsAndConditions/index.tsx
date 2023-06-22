@@ -1,9 +1,11 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import React from 'react'
 
-const TermsAndConditions = React.createClass({
-  render: function () {
-    return (
+function TermsAndConditions() {
+  return (
+    <>
+    <Header />
       <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
@@ -32,7 +34,7 @@ const TermsAndConditions = React.createClass({
                              first                              "
                       style={{
                         padding: "0px 40px 0px 40px",
-                        "padding-bottom": "2.3446658851114vh",
+                        paddingBottom: "2.3446658851114vh",
                       }}
                       aria-label="module container"
                       role="contentinfo"
@@ -62,7 +64,7 @@ const TermsAndConditions = React.createClass({
                       <div
                         className="full-width    module ModuleParagraph "
                         datamodule-id={17}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
                         <div className="uc-content">
                           <p>
@@ -81,8 +83,9 @@ const TermsAndConditions = React.createClass({
           </div>
         </div>
       </main>
-    );
-  },
-});
+      <Footer />
+    </>
+  )
+}
 
-export default TermsAndConditions();
+export default TermsAndConditions

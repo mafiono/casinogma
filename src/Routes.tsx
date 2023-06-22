@@ -1,7 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Redirect } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "pages/Home";
 import NotFound from "pages/NotFound";
+import VirtualSports from "pages/VirtualSports";
+import Basketball from "pages/Live/Match/Basketball";
+import Baseball from "pages/Live/Match/Baseball";
+import IceHockey from "pages/Live/Match/IceHockey";
+import Jackpot5000000 from "pages/Articles/Jackpot5000000";
+import BonusWheel1000000 from "pages/Articles/BonusWheel1000000";
+import WelcomeBonusUpTo300 from "pages/Articles/WelcomeBonusUpTo300";
 const Livecasino = React.lazy(() => import("pages/Livecasino"));
 const Tournaments = React.lazy(() => import("pages/Tournaments"));
 const Prematch = React.lazy(() => import("pages/Prematch"));
@@ -24,13 +31,18 @@ const ProjectRoutes = () => {
           <Route path="/casino" element={<Casino />} />
           <Route path="/esports" element={<Esports />} />
           <Route path="/prematch" element={<Prematch />} />
+          <Route path="/icehockey" element={<IceHockey />} />
+          <Route path="/baseball" element={<Baseball />} />
           <Route path="/tournaments" element={<Tournaments />} />
           <Route path="/livecasino" element={<Livecasino />} />
+          <Route path="/jackpot5000000" element={<Jackpot5000000 />} />
+          <Route path="/bonuswheel1000000" element={<BonusWheel1000000 />} />
+          <Route path="/welcomebonusupto300" element={<WelcomeBonusUpTo300 />} />
           <Route path="/virtualsports" element={<VirtualSports />} />
+          <Route path="/basketball" element={<Basketball />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/termsandconditions" element={<TermsAndConditions />} />
           <Route path="/privacypolicy" element={<PrivacyPolicy />} />
-          <Redirect to="/" />
         </Routes>
       </Router>
     </React.Suspense>

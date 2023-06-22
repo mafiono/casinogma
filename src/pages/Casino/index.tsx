@@ -1,21 +1,18 @@
 import React from "react";
-
-import { Button, Img, List, SelectBox, Text } from "components";
-import CasinoSlots from "components/CasinoSlots";
-import GameCategory from "components/GameCategory";
+import Footer from "components/Footer";
 import Header from "components/Header";
-import Jackpot from "components/Jackpot";
 
-const CasinoPage: React.FC = () => {
+const Casino: React.FC = () => {
   return (
     <>
+    <Header />
       <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
             className="uc-row first"
             data-id={130}
             style={{
-              "margin-bottom": "2.3446658851114vh",
+              marginBottom: "2.3446658851114vh",
               background: "transparent",
             }}
           >
@@ -29,7 +26,7 @@ const CasinoPage: React.FC = () => {
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "0vh" }}
+                    style={{ marginTop: "0vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -44,13 +41,13 @@ const CasinoPage: React.FC = () => {
                       <div
                         className="full-width    module ModuleSlider "
                         datamodule-id={258}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
                         <div
                           id="slider258"
                           className="slider-wrapper  animated animated-258 "
                           data-animated-id={258}
-                          style={{ "padding-top": "45.1935%" }}
+                          style={{ paddingTop: "45.1935%" }}
                         >
                           <div className="slider-container  effect-block public-mode figure effect-default ">
                             <ul className="slider-container ">
@@ -58,15 +55,13 @@ const CasinoPage: React.FC = () => {
                                 className="gallery-image slider-item active-slide"
                                 style={{
                                   opacity: "1",
-                                  "-webkit-transform": "translate(0px, 0px)",
-                                  "-ms-transform": "translate(0px, 0px)",
                                   transform: "translate(0px, 0px)",
                                 }}
                               >
                                 <img
                                   className="cover-image image"
                                   style={{
-                                    "object-position": "53.659% 57.492%",
+                                    objectPosition: "53.659% 57.492%",
                                   }}
                                   src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/258-sdfvsdfv.webp?v=1646694408"
                                   loading="lazy"
@@ -91,7 +86,7 @@ const CasinoPage: React.FC = () => {
               
                                       "
             data-id={250}
-            style={{ "margin-bottom": "1.1723329425557vh" }}
+            style={{ marginBottom: "1.1723329425557vh" }}
           >
             <div id="r250" className="row-container ">
               <div className="row mainRow " style={{}}>
@@ -146,8 +141,6 @@ const CasinoPage: React.FC = () => {
                                         position: "relative",
                                         left: "0px",
                                         opacity: "1",
-                                        "-webkit-transition":
-                                          "opacity 500ms ease 0s, visibility 500ms ease 0s",
                                         transition:
                                           "opacity 500ms ease 0s, visibility 500ms ease 0s",
                                       }}
@@ -157,13 +150,13 @@ const CasinoPage: React.FC = () => {
                                           <div className="card">
                                             <div
                                               className="name"
-                                              style={{ "font-size": "24px" }}
+                                              style={{ fontSize: "24px" }}
                                             >
                                               betconstruct jackpot
                                             </div>
                                             <div
                                               className="poolAmount"
-                                              style={{ "font-size": "56px" }}
+                                              style={{ fontSize: "56px" }}
                                             >
                                               USD{" "}
                                               <div className="odometer odometer-auto-theme                                                                                                               odometer-animating-up odometer-animating">
@@ -585,8 +578,6 @@ const CasinoPage: React.FC = () => {
                                         position: "relative",
                                         left: "-342px",
                                         opacity: "0",
-                                        "-webkit-transition":
-                                          "opacity 500ms ease 0s, visibility 500ms ease 0s",
                                         transition:
                                           "opacity 500ms ease 0s, visibility 500ms ease 0s",
                                       }}
@@ -596,13 +587,13 @@ const CasinoPage: React.FC = () => {
                                           <div className="card">
                                             <div
                                               className="name"
-                                              style={{ "font-size": "24px" }}
+                                              style={{ fontSize: "24px" }}
                                             >
                                               bettinggames jackpot
                                             </div>
                                             <div
                                               className="poolAmount"
-                                              style={{ "font-size": "56px" }}
+                                              style={{ fontSize: "56px" }}
                                             >
                                               USD{" "}
                                               <div className="odometer odometer-auto-theme       odometer-animating-up odometer-animating">
@@ -730,7 +721,7 @@ const CasinoPage: React.FC = () => {
                                   <li className="slick-active">
                                     <button>1</button>
                                   </li>
-                                  <li className>
+                                  <li className="">
                                     <button>2</button>
                                   </li>
                                 </ul>
@@ -743,7 +734,7 @@ const CasinoPage: React.FC = () => {
                                   <span
                                     className="v3-icon expand__icon"
                                     style={{
-                                      "font-size": "8px",
+                                      fontSize: "8px",
                                       position: "relative",
                                     }}
                                   >
@@ -828,7 +819,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -899,7 +890,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -990,7 +981,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1066,7 +1057,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1176,7 +1167,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1273,7 +1264,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1334,7 +1325,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1411,7 +1402,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1512,7 +1503,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1609,7 +1600,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1754,7 +1745,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -1908,7 +1899,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2009,7 +2000,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2118,7 +2109,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2203,7 +2194,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2268,7 +2259,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2357,7 +2348,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2872,7 +2863,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -2953,7 +2944,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -3002,7 +2993,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -3099,7 +3090,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -3196,7 +3187,7 @@ const CasinoPage: React.FC = () => {
                                       <span
                                         className="v3-icon "
                                         style={{
-                                          "font-size": "40px",
+                                          fontSize: "40px",
                                           position: "relative",
                                         }}
                                       >
@@ -3305,7 +3296,7 @@ const CasinoPage: React.FC = () => {
             <div
               id="r309"
               className="row-container "
-              style={{ "z-index": "3" }}
+              style={{ zIndex: "3" }}
             >
               <div className="row mainRow " style={{}}>
                 <div
@@ -3353,12 +3344,11 @@ const CasinoPage: React.FC = () => {
                                         className="v3-select-selection-overflow-item"
                                         style={{
                                           opacity: "0",
-                                          "-webkit-order": "0",
-                                          "-ms-flex-order": "0",
+                                          flexOrder: "0",
                                           order: "0",
                                           height: "0px",
-                                          "overflow-y": "hidden",
-                                          "pointer-events": "none",
+                                          overflowY: "hidden",
+                                          pointerEvents: "none",
                                           position: "absolute",
                                         }}
                                         aria-hidden="true"
@@ -3382,10 +3372,8 @@ const CasinoPage: React.FC = () => {
                                             unselectable="on"
                                             aria-hidden="true"
                                             style={{
-                                              "-webkit-user-select": "none",
-                                              "-moz-user-select": "none",
-                                              "-ms-user-select": "none",
-                                              "user-select": "none",
+
+                                              userSelect: "none",
                                             }}
                                           >
                                             <span
@@ -3412,8 +3400,6 @@ const CasinoPage: React.FC = () => {
                                         className="v3-select-selection-overflow-item v3-select-selection-overflow-item-rest"
                                         style={{
                                           opacity: "1",
-                                          "-webkit-order": "-1",
-                                          "-ms-flex-order": "-1",
                                           order: "-1",
                                         }}
                                       >
@@ -3427,8 +3413,6 @@ const CasinoPage: React.FC = () => {
                                         className="v3-select-selection-overflow-item v3-select-selection-overflow-item-suffix"
                                         style={{
                                           opacity: "1",
-                                          "-webkit-order": "-1",
-                                          "-ms-flex-order": "-1",
                                           order: "-1",
                                         }}
                                       >
@@ -3446,7 +3430,7 @@ const CasinoPage: React.FC = () => {
                                             aria-autocomplete="list"
                                             aria-controls="rc_select_0_list"
                                             aria-activedescendant="rc_select_0_list_0"
-                                            defaultValue
+                                            defaultValue=""
                                             id="rc_select_0"
                                             aria-expanded="false"
                                           />
@@ -3465,16 +3449,14 @@ const CasinoPage: React.FC = () => {
                                     unselectable="on"
                                     aria-hidden="true"
                                     style={{
-                                      "-webkit-user-select": "none",
-                                      "-moz-user-select": "none",
-                                      "-ms-user-select": "none",
-                                      "user-select": "none",
+                                    
+                                      userSelect: "none",
                                     }}
                                   >
                                     <span
-                                      className="v3-icon "
+                                      className="v3-icon"
                                       style={{
-                                        "font-size": "12px",
+                                        fontSize: "12px",
                                         position: "relative",
                                       }}
                                     >
@@ -3542,7 +3524,7 @@ const CasinoPage: React.FC = () => {
                                   <span
                                     className="v3-icon "
                                     style={{
-                                      "font-size": "14px",
+                                      fontSize: "14px",
                                       position: "relative",
                                     }}
                                   >
@@ -3589,7 +3571,7 @@ const CasinoPage: React.FC = () => {
                       <div
                         className="full-width    module ModuleSpace "
                         datamodule-id={625}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
                         <div className="space-container">
                           <div
@@ -3612,7 +3594,7 @@ const CasinoPage: React.FC = () => {
                                       "
             data-id={115}
             style={{
-              "margin-bottom": "6.6934404283802vh",
+              marginBottom: "6.6934404283802vh",
               background: "transparent",
             }}
           >
@@ -3626,7 +3608,7 @@ const CasinoPage: React.FC = () => {
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "0vh" }}
+                    style={{ marginTop: "0vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -3656,7 +3638,7 @@ const CasinoPage: React.FC = () => {
                                 <div className="x-casinoGamesByCategories casino-container__70">
                                   <div
                                     className="x-casinoGamesByCategories__games"
-                                    style={{ "--games-per-row": "6" }}
+                                    style={{ gamesPerRow: "6" }}
                                   >
                                     <div
                                       className="x-casinoGameCardDesktop"
@@ -3675,7 +3657,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3693,7 +3675,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3711,13 +3693,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Diamond Flash
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -3725,7 +3707,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3735,7 +3717,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3770,7 +3752,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3788,7 +3770,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3806,13 +3788,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Shining crown
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -3820,7 +3802,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3830,7 +3812,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3865,7 +3847,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3883,7 +3865,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3901,13 +3883,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Wukong
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -3915,7 +3897,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -3925,7 +3907,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3960,7 +3942,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3978,7 +3960,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -3996,13 +3978,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Jumbo Diamond
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Pascal Gaming
                                             </span>
@@ -4010,7 +3992,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4020,7 +4002,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4055,7 +4037,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4073,7 +4055,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4091,13 +4073,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               20 Hot Bar
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -4105,7 +4087,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4115,7 +4097,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4155,7 +4137,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4173,7 +4155,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4191,13 +4173,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Vbet Candy Splash
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Lambda Gaming
                                             </span>
@@ -4205,7 +4187,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4215,7 +4197,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4255,7 +4237,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4273,7 +4255,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4291,13 +4273,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               20 Golden Coins
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -4305,7 +4287,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4315,7 +4297,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4355,7 +4337,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4373,7 +4355,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4391,13 +4373,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Immortal Ways Diamonds
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -4405,7 +4387,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4415,7 +4397,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4450,7 +4432,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4468,7 +4450,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4486,13 +4468,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Vbet Yummy
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -4500,7 +4482,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4510,7 +4492,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4545,7 +4527,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4563,7 +4545,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4581,13 +4563,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Shake Shake Money Tree
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -4595,7 +4577,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4605,7 +4587,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4640,7 +4622,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4658,7 +4640,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4676,13 +4658,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Drops of Water
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -4690,7 +4672,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4700,7 +4682,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4735,7 +4717,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4753,7 +4735,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4771,13 +4753,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mega Joker
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -4785,7 +4767,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4795,7 +4777,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4830,7 +4812,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4848,7 +4830,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4866,13 +4848,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Fruit Story: Hold the Spin
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Gamzix
                                             </span>
@@ -4880,7 +4862,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4890,7 +4872,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4925,7 +4907,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4943,7 +4925,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -4961,13 +4943,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Texas' Heist
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Champion
                                             </span>
@@ -4975,7 +4957,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -4985,7 +4967,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5020,7 +5002,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5038,7 +5020,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5056,13 +5038,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Dogo Fortune
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Pascal Gaming
                                             </span>
@@ -5070,7 +5052,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5080,7 +5062,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5115,7 +5097,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5133,7 +5115,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5151,13 +5133,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mayan Blaze
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -5165,7 +5147,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5175,7 +5157,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5210,7 +5192,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5228,7 +5210,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5246,13 +5228,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Art of Gold
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -5260,7 +5242,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5270,7 +5252,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5305,7 +5287,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5323,7 +5305,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5341,13 +5323,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Diamond Explosion 7s
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -5355,7 +5337,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5365,7 +5347,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5400,7 +5382,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5418,7 +5400,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5436,13 +5418,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Crazy Mummy
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Pascal Gaming
                                             </span>
@@ -5450,7 +5432,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5460,7 +5442,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5495,7 +5477,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5513,7 +5495,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5531,13 +5513,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               20 Hot Blast
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -5545,7 +5527,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5555,7 +5537,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5590,7 +5572,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5608,7 +5590,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5626,13 +5608,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mayan Cache
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -5640,7 +5622,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5650,7 +5632,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5685,7 +5667,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5703,7 +5685,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5721,13 +5703,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mexicano
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Pascal Gaming
                                             </span>
@@ -5735,7 +5717,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5745,7 +5727,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5780,7 +5762,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5798,7 +5780,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5816,13 +5798,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Clovers of Luck
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -5830,7 +5812,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5840,7 +5822,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5875,7 +5857,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5893,7 +5875,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5911,13 +5893,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Griffon
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Champion
                                             </span>
@@ -5925,7 +5907,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -5935,7 +5917,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5975,7 +5957,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -5993,7 +5975,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6011,13 +5993,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Vegas Repeat Wins
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               RubyPlay
                                             </span>
@@ -6025,7 +6007,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6035,7 +6017,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6070,7 +6052,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6088,7 +6070,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6106,13 +6088,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Wanted Dead or a Wild
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -6120,7 +6102,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6130,7 +6112,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6165,7 +6147,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6183,7 +6165,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6201,13 +6183,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mighty Masks™
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -6215,7 +6197,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6225,7 +6207,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6260,7 +6242,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6278,7 +6260,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6296,13 +6278,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Genie's Secret
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -6310,7 +6292,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6320,7 +6302,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6355,7 +6337,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6373,7 +6355,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6391,13 +6373,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               God Hand Feature Buy
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -6405,7 +6387,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6415,7 +6397,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6450,7 +6432,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6468,7 +6450,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6486,13 +6468,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Ultra Luck
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Gamzix
                                             </span>
@@ -6500,7 +6482,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6510,7 +6492,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6545,7 +6527,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6563,7 +6545,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6581,13 +6563,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Sea Treasure Deep Dive
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -6595,7 +6577,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6605,7 +6587,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6640,7 +6622,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6658,7 +6640,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6676,13 +6658,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Bombay Blackjack
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -6690,7 +6672,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6700,7 +6682,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6735,7 +6717,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6753,7 +6735,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6771,13 +6753,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Ryse of the Mighty Gods
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               OneTouch
                                             </span>
@@ -6785,7 +6767,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6795,7 +6777,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6830,7 +6812,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6848,7 +6830,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6866,13 +6848,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               20 Power Hot
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -6880,7 +6862,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6890,7 +6872,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6925,7 +6907,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6943,7 +6925,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -6961,13 +6943,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               3 Dancing Monkeys™
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Pragmatic Play
                                             </span>
@@ -6975,7 +6957,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -6985,7 +6967,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7020,7 +7002,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7038,7 +7020,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7056,13 +7038,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Plinko
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -7070,7 +7052,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7080,7 +7062,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7115,7 +7097,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7133,7 +7115,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7151,13 +7133,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Temple of Torment™
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -7165,7 +7147,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7175,7 +7157,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7210,7 +7192,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7228,7 +7210,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7246,13 +7228,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mayan Stackways™
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -7260,7 +7242,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7270,7 +7252,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7305,7 +7287,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7323,7 +7305,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7341,13 +7323,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               40 Hot Bar
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               POPOK GAMING
                                             </span>
@@ -7355,7 +7337,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7365,7 +7347,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7400,7 +7382,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7418,7 +7400,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7436,13 +7418,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Fear the Dark
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -7450,7 +7432,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7460,7 +7442,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7495,7 +7477,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7513,7 +7495,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7531,13 +7513,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Cursed Seas
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Hacksaw
                                             </span>
@@ -7545,7 +7527,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7555,7 +7537,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7590,7 +7572,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7608,7 +7590,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7626,13 +7608,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Holy Hand Grenade
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -7640,7 +7622,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7650,7 +7632,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7685,7 +7667,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7703,7 +7685,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7721,13 +7703,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Otterly Amazing
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -7735,7 +7717,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7745,7 +7727,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7780,7 +7762,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7798,7 +7780,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7816,13 +7798,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               5 Doggy Dollars
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -7830,7 +7812,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7840,7 +7822,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7875,7 +7857,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7893,7 +7875,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7911,13 +7893,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Cash Defense
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -7925,7 +7907,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -7935,7 +7917,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7970,7 +7952,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7988,7 +7970,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -8006,13 +7988,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               5 Monsters
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -8020,7 +8002,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -8030,7 +8012,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -8065,7 +8047,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -8083,7 +8065,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -8101,13 +8083,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               Mega Heist
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Relax Gaming
                                             </span>
@@ -8115,7 +8097,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -8125,7 +8107,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -8160,7 +8142,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -8178,7 +8160,7 @@ const CasinoPage: React.FC = () => {
                                               <span
                                                 className="v3-icon casino__real-btn-icon-colored"
                                                 style={{
-                                                  "font-size": "44px",
+                                                  fontSize: "44px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -8196,13 +8178,13 @@ const CasinoPage: React.FC = () => {
                                             </div>
                                             <span
                                               className="casino__name"
-                                              style={{ "font-size": "16px" }}
+                                              style={{ fontSize: "16px" }}
                                             >
                                               100 Power Hot
                                             </span>
                                             <span
                                               className="casino__provider-title"
-                                              style={{ "font-size": "14px" }}
+                                              style={{ fontSize: "14px" }}
                                             >
                                               Amusnet Interactive (EGT)
                                             </span>
@@ -8210,7 +8192,7 @@ const CasinoPage: React.FC = () => {
                                           <button
                                             type="button"
                                             className="v3-btn v3-btn-default x-button x-button--fun x-casinoGameCardDesktop__buttons__btnFun"
-                                            style={{ "font-size": "14px" }}
+                                            style={{ fontSize: "14px" }}
                                           >
                                             <span>Fun Mode</span>
                                           </button>
@@ -8220,7 +8202,7 @@ const CasinoPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "16px",
+                                                fontSize: "16px",
                                                 position: "relative",
                                               }}
                                             >
@@ -8260,6 +8242,7 @@ const CasinoPage: React.FC = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

@@ -1,12 +1,11 @@
 import React from "react";
-
-import { Button, Img, List, SelectBox, Text } from "components";
-import CasinoSlots from "components/CasinoSlots";
 import Header from "components/Header";
+import Footer from "components/Footer";
 
 const TournamentsPage: React.FC = () => {
   return (
     <>
+    <Header />
       <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
@@ -66,7 +65,7 @@ const TournamentsPage: React.FC = () => {
                                               aria-activedescendant="rc_select_15_list_0"
                                               readOnly
                                               unselectable="on"
-                                              defaultValue
+                                              defaultValue=""
                                               id="rc_select_15"
                                               style={{ opacity: 0 }}
                                             />
@@ -117,7 +116,7 @@ const TournamentsPage: React.FC = () => {
                                               aria-activedescendant="rc_select_16_list_0"
                                               readOnly
                                               unselectable="on"
-                                              defaultValue
+                                              defaultValue=""
                                               id="rc_select_16"
                                               style={{ opacity: 0 }}
                                             />
@@ -250,7 +249,7 @@ const TournamentsPage: React.FC = () => {
                                                   aria-activedescendant="rc_select_17_list_0"
                                                   readOnly
                                                   unselectable="on"
-                                                  defaultValue
+                                                  defaultValue=""
                                                   id="rc_select_17"
                                                   style={{ opacity: 0 }}
                                                 />
@@ -3325,6 +3324,7 @@ const TournamentsPage: React.FC = () => {
           </div>
         </div>
       </main>
+      <Footer />
     </>
   );
 };

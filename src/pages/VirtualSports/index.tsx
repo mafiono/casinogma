@@ -1,10 +1,12 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Footer from 'components/Footer'
+import Header from 'components/Header'
+import React from 'react'
 
-const VirtualSports = React.createClass({
-  render: function () {
-    return (
-      <main className="main-rows">
+function VirtualSports() {
+  return (
+    <>
+    <Header />
+    <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
             className="uc-row     last                       
@@ -100,8 +102,9 @@ const VirtualSports = React.createClass({
           </div>
         </div>
       </main>
-    );
-  },
-});
+      <Footer />
+    </>
+  )
+}
 
-export default VirtualSports();
+export default VirtualSports

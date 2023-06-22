@@ -1,9 +1,13 @@
-import React from "react";
+import Footer from 'components/Footer';
+import Header from 'components/Header';
+import React from 'react';
+import "./aboutus.less";
 
-var YourComponent = React.createClass({
-  render: function () {
-    return (
-      <main className="main-rows">
+function AboutUs() {
+  return (
+    <>
+    <Header />
+     <main className="main-rows">
         <div className="uc-row-wrapper">
           <div
             className="uc-row     first                       
@@ -37,7 +41,7 @@ var YourComponent = React.createClass({
                       <div
                         className="full-width    module ModuleImage "
                         datamodule-id={444}
-                        style={{ "max-width": "100%" }}
+                        style={{ maxWidth: "100%" }}
                       >
                         <div
                           className="animated animated-444 "
@@ -46,7 +50,7 @@ var YourComponent = React.createClass({
                         >
                           <div className=" ">
                             <div>
-                              <div className style={{}}>
+                              <div className="" style={{}}>
                                 <img
                                   className="image"
                                   width="1918px"
@@ -90,7 +94,7 @@ var YourComponent = React.createClass({
                              first                              "
                                       style={{
                                         padding: "0px 0px 0px 80px",
-                                        "padding-bottom": "2.0618556701031vh",
+                                        paddingBottom: "2.0618556701031vh",
                                       }}
                                       aria-label="module container"
                                       role="contentinfo"
@@ -105,13 +109,13 @@ var YourComponent = React.createClass({
                                             <span
                                               style={{
                                                 color: "#ffffff",
-                                                "font-size": "60px",
+                                                fontSize: "60px",
                                               }}
                                             >
                                               <strong>
                                                 <span
                                                   style={{
-                                                    "font-family": "Roboto",
+                                                   fontFamily: "Roboto",
                                                   }}
                                                 >
                                                   ABOUT US
@@ -135,7 +139,7 @@ var YourComponent = React.createClass({
                                         datamodule-id={450}
                                         style={{
                                           display: "block",
-                                          "max-width": "576px",
+                                          maxWidth: "576px",
                                         }}
                                       >
                                         <div className="uc-content">
@@ -164,7 +168,7 @@ var YourComponent = React.createClass({
                                               style={{
                                                 color:
                                                   "rgba(255, 255, 255, 0.5)",
-                                                "letter-spacing": "0px",
+                                                letterSpacing: "0px",
                                               }}
                                             >
                                               Licensed and regulated by the
@@ -173,7 +177,7 @@ var YourComponent = React.createClass({
                                                 style={{
                                                   color:
                                                     "rgba(255, 255, 255, 0.5)",
-                                                  "letter-spacing": "0px",
+                                                  letterSpacing: "0px",
                                                 }}
                                               >
                                                 Betboard
@@ -202,7 +206,7 @@ var YourComponent = React.createClass({
             <div className="bg-image">
               <img
                 className="cover-image bg-image-view"
-                style={{ opacity: "1", "object-position": "50.813% 24.59%" }}
+                style={{ opacity: "1", objectPosition: "50.813% 24.59%" }}
                 loading="lazy"
                 src="https://static.springbuilder.site/fs/userFiles-v2/betboard/images/r219-about.webp?v=1646698071"
                 alt="r219-about.png"
@@ -211,8 +215,9 @@ var YourComponent = React.createClass({
           </div>
         </div>
       </main>
-    );
-  },
-});
+      <Footer />
+    </>
+  )
+}
 
-export default ContactUs();
+export default AboutUs

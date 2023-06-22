@@ -1,10 +1,5 @@
 import React from "react";
-
-import { Button, Img, Input, Line, List, SelectBox, Text } from "components";
-import GameCategory from "components/GameCategory";
-import Header from "components/Header";
-
-import { CloseSVG } from "../../assets/images";
+import {Link} from "react-router-dom";
 
 const PrematchPage: React.FC = () => {
   const [divstylewrapvalue, setDivstylewrapvalue] = React.useState<string>("");
@@ -23,7 +18,7 @@ const PrematchPage: React.FC = () => {
             <div
               id="r126"
               className="row-container "
-              style={{ "z-index": "3" }}
+              style={{ zIndex: "3" }}
             >
               <div className="row mainRow " style={{}}>
                 <div
@@ -34,7 +29,7 @@ const PrematchPage: React.FC = () => {
                 >
                   <div
                     className="column-container vertical-top"
-                    style={{ "margin-top": "1.1723329425557vh" }}
+                    style={{ marginTop: "1.1723329425557vh" }}
                     aria-label="column container"
                     role="contentinfo"
                   >
@@ -50,12 +45,7 @@ const PrematchPage: React.FC = () => {
                         datamodule-id={438}
                       >
                         <div className="custom-html-container">
-                          <style
-                            dangerouslySetInnerHTML={{
-                              __html:
-                                '\ndiv[data-widget="DesktopSportsbook"] {\nmin-height: calc(100vh - 86.86px)\n}\n',
-                            }}
-                          />
+                         
                         </div>
                       </div>
                     </div>
@@ -87,8 +77,8 @@ const PrematchPage: React.FC = () => {
                               <div
                                 className="v3-row SBRow SBRow--cover SBRow--classic"
                                 style={{
-                                  "margin-left": "-4px",
-                                  "margin-right": "-4px",
+                                  marginLeft: "-4px",
+                                  marginRight: "-4px",
                                   height: "100%",
                                 }}
                               >
@@ -119,8 +109,8 @@ const PrematchPage: React.FC = () => {
                                     data-popover-parent="true"
                                     className="v3-col SBCol prematch__type-page v3-col-xs-5"
                                     style={{
-                                      "padding-left": "4px",
-                                      "padding-right": "4px",
+                                      paddingLeft: "4px",
+                                      paddingRight: "4px",
                                     }}
                                   >
                                     <div className="left-sidebar-favorite__wrapper">
@@ -130,7 +120,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon text-color"
                                               style={{
-                                                "font-size": "24px",
+                                                fontSize: "24px",
                                                 position: "relative",
                                               }}
                                             >
@@ -192,7 +182,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon eventCollapse__caret"
                                               style={{
-                                                "font-size": "12px",
+                                                fontSize: "12px",
                                                 position: "relative",
                                               }}
                                             >
@@ -220,13 +210,13 @@ const PrematchPage: React.FC = () => {
                                               id="search-input-bar"
                                               className="v3-input style__StyledInput-sc-qbxr52-1 bgbPnr"
                                               type="text"
-                                              defaultValue
+                                              defaultValue=""
                                             />
                                             <span className="style__PostfixIconWrapper-sc-qbxr52-2 iTLza-d">
                                               <span
                                                 className="v3-icon "
                                                 style={{
-                                                  "font-size": "14px",
+                                                  fontSize: "14px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -258,7 +248,7 @@ const PrematchPage: React.FC = () => {
                                                 <span
                                                   className="v3-icon "
                                                   style={{
-                                                    "font-size": "14px",
+                                                    fontSize: "14px",
                                                     position: "relative",
                                                   }}
                                                 >
@@ -289,7 +279,7 @@ const PrematchPage: React.FC = () => {
                                                 <span
                                                   className="v3-icon "
                                                   style={{
-                                                    "font-size": "10px",
+                                                    fontSize: "10px",
                                                     position: "relative",
                                                   }}
                                                 >
@@ -322,7 +312,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -379,7 +369,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret navigationCollapse__caret-expanded"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -401,7 +391,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon Competitions__FavoriteIconWrapper__FavoriteIcon"
                                                         style={{
-                                                          "font-size": "16px",
+                                                          fontSize: "16px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -422,13 +412,13 @@ const PrematchPage: React.FC = () => {
                                                     </div>
                                                   </div>
                                                 </a>
-                                                <Link to={"/Prematch/match/Soccer/Europe/1862/"}>
+                                                <Link to={"/Prematch?match/Soccer/Europe/1862/"}>
                                                   <div className="competitionWithTooltip competitionWithTooltip--hover">
                                                     <span className="Competitions__FavoriteIconWrapper">
                                                       <span
                                                         className="v3-icon Competitions__FavoriteIconWrapper__FavoriteIcon"
                                                         style={{
-                                                          "font-size": "16px",
+                                                          fontSize: "16px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -454,7 +444,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon Competitions__FavoriteIconWrapper__FavoriteIcon"
                                                         style={{
-                                                          "font-size": "16px",
+                                                          fontSize: "16px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -481,7 +471,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon Competitions__FavoriteIconWrapper__FavoriteIcon"
                                                         style={{
-                                                          "font-size": "16px",
+                                                          fontSize: "16px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -509,7 +499,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -542,7 +532,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -565,7 +555,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -594,7 +584,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -617,7 +607,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -650,7 +640,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -673,7 +663,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -706,7 +696,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -729,7 +719,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -762,7 +752,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -785,7 +775,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -826,7 +816,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -849,7 +839,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -918,7 +908,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -941,7 +931,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -974,7 +964,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -997,7 +987,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1158,7 +1148,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1181,7 +1171,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1218,7 +1208,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1241,7 +1231,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1272,7 +1262,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1295,7 +1285,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1328,7 +1318,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1351,7 +1341,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1388,7 +1378,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1411,7 +1401,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "24px",
+                                                        fontSize: "24px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1448,7 +1438,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon navigationCollapse__caret"
                                                       style={{
-                                                        "font-size": "12px",
+                                                        fontSize: "12px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -1474,8 +1464,8 @@ const PrematchPage: React.FC = () => {
                                   <div
                                     className="v3-col SBCol v3-col-xs-14"
                                     style={{
-                                      "padding-left": "4px",
-                                      "padding-right": "4px",
+                                      paddingLeft: "4px",
+                                      paddingRight: "4px",
                                       display: "flex",
                                       "-webkit-flex-direction": "column",
                                       "-ms-flex-direction": "column",
@@ -1489,7 +1479,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1534,7 +1524,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1652,7 +1642,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1750,7 +1740,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1782,7 +1772,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1862,7 +1852,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1918,7 +1908,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -1981,7 +1971,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2045,7 +2035,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2161,7 +2151,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2401,7 +2391,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2448,7 +2438,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2508,7 +2498,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2564,7 +2554,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2660,7 +2650,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2800,7 +2790,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2940,7 +2930,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -2976,7 +2966,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3060,7 +3050,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3120,7 +3110,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3200,7 +3190,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3320,7 +3310,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3424,7 +3414,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -3481,7 +3471,7 @@ const PrematchPage: React.FC = () => {
                                                 />
                                                 <g
                                                   style={{
-                                                    "mix-blend-mode":
+                                                    mixBlendMode:
                                                       "multiply",
                                                   }}
                                                 >
@@ -3516,7 +3506,7 @@ const PrematchPage: React.FC = () => {
                                                   <g
                                                     opacity="0.64"
                                                     style={{
-                                                      "mix-blend-mode":
+                                                      mixBlendMode:
                                                         "multiply",
                                                     }}
                                                   >
@@ -4376,7 +4366,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4444,7 +4434,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4495,7 +4485,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4595,7 +4585,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4651,7 +4641,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4763,7 +4753,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4851,7 +4841,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -4938,7 +4928,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5002,7 +4992,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5270,7 +5260,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5350,7 +5340,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5434,7 +5424,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -5986,7 +5976,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6110,7 +6100,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6294,7 +6284,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6402,7 +6392,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6522,7 +6512,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6598,7 +6588,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6666,7 +6656,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6714,7 +6704,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6797,7 +6787,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6878,7 +6868,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -6967,7 +6957,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7060,7 +7050,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7096,7 +7086,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7189,7 +7179,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7272,7 +7262,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7353,7 +7343,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7431,7 +7421,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7519,7 +7509,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7555,7 +7545,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7636,7 +7626,7 @@ const PrematchPage: React.FC = () => {
                                             <span
                                               className="v3-icon "
                                               style={{
-                                                "font-size": "32px",
+                                                fontSize: "32px",
                                                 position: "relative",
                                               }}
                                             >
@@ -7803,16 +7793,16 @@ const PrematchPage: React.FC = () => {
                                     <div
                                       className="v3-row SBRow innerRow markets__container SBRow--cover"
                                       style={{
-                                        "margin-left": "-4px",
-                                        "margin-right": "-4px",
+                                        marginLeft: "-4px",
+                                        marginRight: "-4px",
                                       }}
                                     >
                                       <div
                                         id="InfiniteScrollId"
                                         className="v3-col SBCol v3-col-xs-8"
                                         style={{
-                                          "padding-left": "4px",
-                                          "padding-right": "4px",
+                                          paddingLeft: "4px",
+                                          paddingRight: "4px",
                                         }}
                                       >
                                         <div className="sportsbook-game-list-wrapper">
@@ -7826,7 +7816,7 @@ const PrematchPage: React.FC = () => {
                                                 <span
                                                   className="v3-icon pickerButton__caret"
                                                   style={{
-                                                    "font-size": "8px",
+                                                    fontSize: "8px",
                                                     position: "absolute",
                                                   }}
                                                 >
@@ -7844,7 +7834,7 @@ const PrematchPage: React.FC = () => {
                                               <span
                                                 className="v3-icon expandAllButton"
                                                 style={{
-                                                  "font-size": "16px",
+                                                  fontSize: "16px",
                                                   position: "relative",
                                                 }}
                                               >
@@ -7873,7 +7863,7 @@ const PrematchPage: React.FC = () => {
                                                   <div className="style__Header-sc-1bf9ajh-1 jsBCRI v3-event-collapse__header">
                                                     <div
                                                       className="style__Title-sc-1bf9ajh-2 crVaFX eventCollapse__title"
-                                                      title
+                                                      title=""
                                                     >
                                                       <div className="sportsbook-game-list-group-title">
                                                         Thu 22 Jun 2023
@@ -7883,7 +7873,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon eventCollapse__caret eventCollapse__caret-expanded"
                                                         style={{
-                                                          "font-size": "12px",
+                                                          fontSize: "12px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -7919,7 +7909,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -7945,7 +7935,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-302"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -7966,7 +7956,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8025,9 +8015,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -8069,7 +8059,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -8095,7 +8085,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-869"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8116,7 +8106,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8175,9 +8165,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -8219,7 +8209,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -8245,7 +8235,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-355"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8266,7 +8256,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8326,9 +8316,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -8370,7 +8360,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -8396,7 +8386,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-447"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8417,7 +8407,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8476,9 +8466,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -8507,7 +8497,7 @@ const PrematchPage: React.FC = () => {
                                                   <div className="style__Header-sc-1bf9ajh-1 jsBCRI v3-event-collapse__header">
                                                     <div
                                                       className="style__Title-sc-1bf9ajh-2 crVaFX eventCollapse__title"
-                                                      title
+                                                      title=""
                                                     >
                                                       <div className="sportsbook-game-list-group-title">
                                                         Fri 23 Jun 2023
@@ -8517,7 +8507,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon eventCollapse__caret eventCollapse__caret-expanded"
                                                         style={{
-                                                          "font-size": "12px",
+                                                          fontSize: "12px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -8553,7 +8543,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -8579,7 +8569,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-972"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8600,7 +8590,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8660,9 +8650,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -8704,7 +8694,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -8730,7 +8720,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-560"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8751,7 +8741,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8810,9 +8800,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -8854,7 +8844,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -8880,7 +8870,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-433"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8901,7 +8891,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -8961,9 +8951,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -9005,7 +8995,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9031,7 +9021,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-962"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9052,7 +9042,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9111,9 +9101,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -9142,7 +9132,7 @@ const PrematchPage: React.FC = () => {
                                                   <div className="style__Header-sc-1bf9ajh-1 jsBCRI v3-event-collapse__header">
                                                     <div
                                                       className="style__Title-sc-1bf9ajh-2 crVaFX eventCollapse__title"
-                                                      title
+                                                      title=""
                                                     >
                                                       <div className="sportsbook-game-list-group-title">
                                                         Sun 25 Jun 2023
@@ -9152,7 +9142,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon eventCollapse__caret eventCollapse__caret-expanded"
                                                         style={{
-                                                          "font-size": "12px",
+                                                          fontSize: "12px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -9188,7 +9178,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9214,7 +9204,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-136"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9235,7 +9225,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9294,9 +9284,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -9322,7 +9312,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9348,7 +9338,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-607"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9369,7 +9359,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9429,9 +9419,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -9457,7 +9447,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9483,7 +9473,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-321"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9504,7 +9494,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9563,9 +9553,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           >
@@ -9607,7 +9597,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9633,7 +9623,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-46"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9654,7 +9644,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9713,9 +9703,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -9738,7 +9728,7 @@ const PrematchPage: React.FC = () => {
                                                       <span
                                                         className="v3-icon eventCollapse__caret eventCollapse__caret-expanded"
                                                         style={{
-                                                          "font-size": "12px",
+                                                          fontSize: "12px",
                                                           position: "relative",
                                                         }}
                                                       >
@@ -9774,7 +9764,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9800,7 +9790,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-184"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9821,7 +9811,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9881,9 +9871,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -9909,7 +9899,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -9935,7 +9925,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-653"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -9956,7 +9946,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -10015,9 +10005,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -10043,7 +10033,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -10069,7 +10059,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-927"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -10090,7 +10080,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -10150,9 +10140,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -10178,7 +10168,7 @@ const PrematchPage: React.FC = () => {
                                                                 <span
                                                                   className="v3-icon "
                                                                   style={{
-                                                                    "font-size":
+                                                                    fontSize:
                                                                       "12px",
                                                                     position:
                                                                       "relative",
@@ -10204,7 +10194,7 @@ const PrematchPage: React.FC = () => {
                                                               className="v3-icon match-statistic"
                                                               data-popover-trigger="popover-trigger-49"
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -10225,7 +10215,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "12px",
                                                                 position:
                                                                   "relative",
@@ -10284,9 +10274,9 @@ const PrematchPage: React.FC = () => {
                                                           <div
                                                             className="am-flexbox am-flexbox-justify-end am-flexbox-align-center"
                                                             style={{
-                                                              "margin-left":
+                                                              marginLeft:
                                                                 "-2px",
-                                                              "margin-right":
+                                                              marginRight:
                                                                 "-2px",
                                                             }}
                                                           />
@@ -10303,8 +10293,8 @@ const PrematchPage: React.FC = () => {
                                       <div
                                         className="v3-col SBCol v3-col-xs-16"
                                         style={{
-                                          "padding-left": "4px",
-                                          "padding-right": "4px",
+                                          paddingLeft: "4px",
+                                          paddingRight: "4px",
                                           overflow: "hidden",
                                           display: "flex",
                                         }}
@@ -10364,7 +10354,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon betsMenu__favorites-icon"
                                                       style={{
-                                                        "font-size": "16px",
+                                                        fontSize: "16px",
                                                         position: "relative",
                                                       }}
                                                     >
@@ -10417,7 +10407,7 @@ const PrematchPage: React.FC = () => {
                                                   <span
                                                     className="v3-icon expandAllButton"
                                                     style={{
-                                                      "font-size": "20px",
+                                                      fontSize: "20px",
                                                       position: "relative",
                                                     }}
                                                   >
@@ -10457,7 +10447,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -10484,7 +10474,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -10523,7 +10513,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -10545,7 +10535,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -10597,7 +10587,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -10624,7 +10614,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -10663,7 +10653,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -10685,7 +10675,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -10737,7 +10727,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -10764,7 +10754,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -10803,7 +10793,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -10825,7 +10815,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -11013,7 +11003,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11041,7 +11031,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -11080,7 +11070,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11102,7 +11092,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -11200,7 +11190,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11228,7 +11218,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -11267,7 +11257,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11289,7 +11279,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -11405,7 +11395,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11432,7 +11422,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -11471,7 +11461,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11493,7 +11483,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -11537,7 +11527,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11564,7 +11554,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -11603,7 +11593,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11625,7 +11615,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -11839,7 +11829,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11866,7 +11856,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -11906,7 +11896,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -11950,7 +11940,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -11977,7 +11967,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -12017,7 +12007,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -12213,7 +12203,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -12240,7 +12230,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -12279,7 +12269,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -12301,7 +12291,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -12417,7 +12407,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -12444,7 +12434,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -12484,7 +12474,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -12672,7 +12662,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -12699,7 +12689,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -12738,7 +12728,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -12760,7 +12750,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -12890,7 +12880,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -12918,7 +12908,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -12958,7 +12948,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13056,7 +13046,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13084,7 +13074,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13124,7 +13114,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13222,7 +13212,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13250,7 +13240,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13289,7 +13279,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13311,7 +13301,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13355,7 +13345,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13383,7 +13373,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13422,7 +13412,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13444,7 +13434,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13488,7 +13478,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13515,7 +13505,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13554,7 +13544,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13576,7 +13566,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13620,7 +13610,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13647,7 +13637,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13686,7 +13676,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13708,7 +13698,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13752,7 +13742,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13779,7 +13769,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13818,7 +13808,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13840,7 +13830,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -13884,7 +13874,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13912,7 +13902,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -13951,7 +13941,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -13973,7 +13963,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14043,7 +14033,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14071,7 +14061,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -14110,7 +14100,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14132,7 +14122,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14202,7 +14192,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14229,7 +14219,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -14269,7 +14259,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14313,7 +14303,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14340,7 +14330,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -14380,7 +14370,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14424,7 +14414,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14452,7 +14442,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -14491,7 +14481,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14513,7 +14503,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14591,7 +14581,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14619,7 +14609,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -14658,7 +14648,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14680,7 +14670,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14756,7 +14746,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14784,7 +14774,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -14823,7 +14813,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -14845,7 +14835,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -14973,7 +14963,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15001,7 +14991,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -15040,7 +15030,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15062,7 +15052,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -15190,7 +15180,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15218,7 +15208,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -15257,7 +15247,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15279,7 +15269,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -15407,7 +15397,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15435,7 +15425,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -15474,7 +15464,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15496,7 +15486,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -15624,7 +15614,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15652,7 +15642,7 @@ const PrematchPage: React.FC = () => {
                                                               <span
                                                                 className="v3-icon marketList__paperclip-icon"
                                                                 style={{
-                                                                  "font-size":
+                                                                  fontSize:
                                                                     "16px",
                                                                   position:
                                                                     "relative",
@@ -15691,7 +15681,7 @@ const PrematchPage: React.FC = () => {
                                                             <span
                                                               className="v3-icon "
                                                               style={{
-                                                                "font-size":
+                                                                fontSize:
                                                                   "16px",
                                                                 position:
                                                                   "relative",
@@ -15713,7 +15703,7 @@ const PrematchPage: React.FC = () => {
                                                           <span
                                                             className="v3-icon marketCollapse__caret marketCollapse__caret-expanded"
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -15920,16 +15910,16 @@ const PrematchPage: React.FC = () => {
                                   <div
                                     className="v3-col SBCol v3-col-xs-5"
                                     style={{
-                                      "padding-left": "4px",
-                                      "padding-right": "4px",
-                                      "z-index": "14",
+                                      paddingLeft: "4px",
+                                      paddingRight: "4px",
+                                      zIndex: "14",
                                     }}
                                   >
                                     <div id="betslip-wrapper">
                                       <div
                                         className="betslipWrapper betslipWrapper--empty"
                                         style={{
-                                          "max-height":
+                                          maxHeight:
                                             "calc(100vh - env(safe-area-inset-bottom) - 118px - 0px)",
                                         }}
                                       >
@@ -15951,7 +15941,7 @@ const PrematchPage: React.FC = () => {
                                           <div
                                             className="am-tabs-content-wrap"
                                             style={{
-                                              "touch-action": "pan-x pan-y",
+                                              touchAction: "pan-x pan-y",
                                               position: "relative",
                                               left: "0%",
                                             }}
@@ -15970,9 +15960,6 @@ const PrematchPage: React.FC = () => {
                                                   <div
                                                     className="am-flexbox betType__container am-flexbox-justify-between am-flexbox-align-center"
                                                     style={{
-                                                      "-webkit-flex":
-                                                        "0 0 auto",
-                                                      "-ms-flex": "0 0 auto",
                                                       flex: "0 0 auto",
                                                     }}
                                                   >
@@ -15992,7 +15979,7 @@ const PrematchPage: React.FC = () => {
                                                               aria-activedescendant="rc_select_0_list_0"
                                                               readOnly
                                                               unselectable="on"
-                                                              defaultValue
+                                                              defaultValue=""
                                                               style={{
                                                                 opacity: "0",
                                                               }}
@@ -16008,20 +15995,14 @@ const PrematchPage: React.FC = () => {
                                                           unselectable="on"
                                                           aria-hidden="true"
                                                           style={{
-                                                            "-webkit-user-select":
-                                                              "none",
-                                                            "-moz-user-select":
-                                                              "none",
-                                                            "-ms-user-select":
-                                                              "none",
-                                                            "user-select":
+                                                            userSelect:
                                                               "none",
                                                           }}
                                                         >
                                                           <span
                                                             className="v3-icon "
                                                             style={{
-                                                              "font-size":
+                                                              fontSize:
                                                                 "12px",
                                                               position:
                                                                 "relative",
@@ -16045,7 +16026,7 @@ const PrematchPage: React.FC = () => {
                                                         <span
                                                           className="v3-icon "
                                                           style={{
-                                                            "font-size": "16px",
+                                                            fontSize: "16px",
                                                             position:
                                                               "relative",
                                                           }}
@@ -16065,7 +16046,7 @@ const PrematchPage: React.FC = () => {
                                                         <span
                                                           className="v3-icon "
                                                           style={{
-                                                            "font-size": "16px",
+                                                            fontSize: "16px",
                                                             position:
                                                               "relative",
                                                           }}
@@ -16085,7 +16066,7 @@ const PrematchPage: React.FC = () => {
                                                   </div>
                                                 </div>
                                                 <div
-                                                  id
+                                                  id=""
                                                   className="style__Container-sc-c1d6zv-0 hePxsE"
                                                   style={{ overflow: "auto" }}
                                                 >
@@ -16093,7 +16074,7 @@ const PrematchPage: React.FC = () => {
                                                     <span
                                                       className="v3-icon "
                                                       style={{
-                                                        "font-size": "176px",
+                                                        fontSize: "176px",
                                                         position: "relative",
                                                       }}
                                                     >
